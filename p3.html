@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sujeeta Kumari | Portfolio</title>
+
+  <style>
+    :root {
+      --primary: #133;
+      --accent: #FFC107;
+      --background: #a7fefb;
+      --text: #2D2D2D;
+      --card-bg: #ffffff;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: var(--background);
+      color: var(--text);
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background-color: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    }
+
+    header h1 {
+      font-size: 36px;
+      font-weight: bold;
+    }
+
+    nav {
+      margin-top: 15px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 500;
+      font-size: 16px;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    .section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .section-title {
+      font-size: 32px;
+      color: var(--primary);
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border-radius: 10px;
+      padding: 20px;
+      margin: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .skills, .projects {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .skills .card, .projects .card {
+      width: 300px;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: var(--accent);
+      color: black;
+      padding: 10px 20px;
+      margin-top: 15px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #e0a800;
+    }
+
+    .social-icons {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .social-icons a {
+      margin: 0 10px;
+      color: var(--primary);
+      font-size: 24px;
+      transition: color 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: var(--accent);
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-top: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+
+    button {
+      background: var(--primary);
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      margin-top: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    footer {
+      background-color: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 25px;
+      margin-top: 40px;
+      font-size: 16px;
+    }
+
+    @media (max-width: 768px) {
+      .skills .card, .projects .card {
+        width: 90%;
+      }
+
+      nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    }
+  </style>
+
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <header>
+    <h1>Sujeeta Kumari</h1>
+    <p>Web Developer | ML Intern | BCA Student</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about" class="section">
+    <h2 class="section-title">About Me</h2>
+    <p>Hello! I'm Sujeeta Kumari, currently pursuing BCA from Khalsa College of Engineering and Technology. Highly motivated and detail-oriented BCA student (5th semester) with a strong foundation in Frontend Web Development and Data Analytics. Experienced in developing responsive websites using HTML, CSS, JavaScript, and proficient in Python, SQL, Power BI, and Excel. Currently pursuing a Machine Learning internship at NIT Delhi and a Data Science internship via Job Growth, gaining hands-on exposure to real-world projects. Passionate about building impactful applications and visual dashboards. Quick learner with strong communication skills and a growth mindset.
+
+I enjoy creating responsive websites and exploring modern tech like Machine Learning.</p>
+    <div class="social-icons">
+      <a href="https://github.com/settings/profile" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/sujeeta-kumari-520a70351?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="mailto:sujeetabyahut23@gmail.com"><i class="fas fa-envelope"></i></a>
+    </div>
+  </section>
+
+  <section id="skills" class="section">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills">
+      <div class="card">HTML</div>
+      <div class="card">CSS</div>
+      <div class="card">JavaScript</div>
+      <div class="card">Power Bi</div>
+      <div class="card">Python</div>
+      <div class="card">Excel</div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <h2 class="section-title">Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>Portfolio Website</h3>
+        <p>A responsive personal website built using HTML, CSS & JS.</p>
+        <a href="#" class="btn">GitHub</a>
+        <a href="#" class="btn">Live Demo</a>
+      </div>
+      <div class="card">
+        <h3>To-Do List App</h3>
+        <p>A task manager app using JavaScript and localStorage.</p>
+        <a href="#" class="btn">GitHub</a>
+        <a href="#" class="btn">Live Demo</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="resume" class="section">
+    <h2 class="section-title">Resume</h2>
+    <p>You can download my latest resume here:</p>
+    <a href="resume.pdf" download class="btn">📄 Download Resume</a>
+  </section>
+
+  <section id="contact" class="section">
+    <h2 class="section-title">Contact Me</h2>
+    <form action="https://formspree.io/f/yourFormID" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="_replyto" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 Sujeeta Kumari. All Rights Reserved.
+  </footer>
+
+</body>
+</html>
